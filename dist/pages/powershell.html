@@ -8,9 +8,9 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="../assets/powershell-wXeNTFU6.js"></script>
-    <link rel="modulepreload" crossorigin href="../assets/nav-Dlzpl86F.js">
-    <link rel="stylesheet" crossorigin href="../assets/nav-BWcAxwib.css">
+    <script type="module" crossorigin src="../assets/powershell-B1XzA_K1.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/nav-DRwslH96.js">
+    <link rel="stylesheet" crossorigin href="../assets/nav-CmfSMkiC.css">
   </head>
   <body class="powershell-page">
     <nav class="navbar"></nav>
@@ -32,12 +32,20 @@
               <span class="desc">Show current working directory</span>
             </div>
             <div class="cmd">
-              <code>Set-Location <span class="arg">C:\\path\\to\\dir</span></code>
-              <span class="desc">Change directory (alias: <span class="tag tag-tip">cd</span>)</span>
+              <code
+                >Set-Location <span class="arg">C:\\path\\to\\dir</span></code
+              >
+              <span class="desc"
+                >Change directory (alias:
+                <span class="tag tag-tip">cd</span>)</span
+              >
             </div>
             <div class="cmd">
               <code>Get-ChildItem <span class="flag">-Force</span></code>
-              <span class="desc">List files including hidden items (alias: <span class="tag tag-tip">ls</span>)</span>
+              <span class="desc"
+                >List files including hidden items (alias:
+                <span class="tag tag-tip">ls</span>)</span
+              >
             </div>
             <div class="cmd">
               <code>Push-Location <span class="arg">..</span></code>
@@ -57,19 +65,31 @@
           </div>
           <div class="commands">
             <div class="cmd">
-              <code>New-Item <span class="arg">notes.txt</span> <span class="flag">-ItemType</span> File</code>
+              <code
+                >New-Item <span class="arg">notes.txt</span>
+                <span class="flag">-ItemType</span> File</code
+              >
               <span class="desc">Create a file</span>
             </div>
             <div class="cmd">
-              <code>New-Item <span class="arg">logs</span> <span class="flag">-ItemType</span> Directory</code>
+              <code
+                >New-Item <span class="arg">logs</span>
+                <span class="flag">-ItemType</span> Directory</code
+              >
               <span class="desc">Create a directory</span>
             </div>
             <div class="cmd">
-              <code>Copy-Item <span class="arg">src.txt</span> <span class="arg">backup.txt</span></code>
+              <code
+                >Copy-Item <span class="arg">src.txt</span>
+                <span class="arg">backup.txt</span></code
+              >
               <span class="desc">Copy file or folder</span>
             </div>
             <div class="cmd">
-              <code>Move-Item <span class="arg">old.txt</span> <span class="arg">archive\\old.txt</span></code>
+              <code
+                >Move-Item <span class="arg">old.txt</span>
+                <span class="arg">archive\\old.txt</span></code
+              >
               <span class="desc">Move or rename item</span>
             </div>
             <div class="cmd">
@@ -77,8 +97,14 @@
               <span class="desc">Delete file</span>
             </div>
             <div class="cmd">
-              <code>Remove-Item <span class="arg">.\\build</span> <span class="flag">-Recurse -Force</span></code>
-              <span class="desc">Delete directory recursively <span class="tag tag-danger">destructive</span></span>
+              <code
+                >Remove-Item <span class="arg">.\\build</span>
+                <span class="flag">-Recurse -Force</span></code
+              >
+              <span class="desc"
+                >Delete directory recursively
+                <span class="tag tag-danger">destructive</span></span
+              >
             </div>
           </div>
         </div>
@@ -94,15 +120,27 @@
               <span class="desc">Print file content</span>
             </div>
             <div class="cmd">
-              <code>Get-Content <span class="arg">app.log</span> <span class="flag">-Tail</span> 50 <span class="flag">-Wait</span></code>
+              <code
+                >Get-Content <span class="arg">app.log</span>
+                <span class="flag">-Tail</span> 50
+                <span class="flag">-Wait</span></code
+              >
               <span class="desc">Follow live logs (tail -f equivalent)</span>
             </div>
             <div class="cmd">
-              <code>Select-String <span class="flag">-Path</span> <span class="arg">*.log</span> <span class="flag">-Pattern</span> <span class="arg">"ERROR"</span></code>
+              <code
+                >Select-String <span class="flag">-Path</span>
+                <span class="arg">*.log</span>
+                <span class="flag">-Pattern</span>
+                <span class="arg">"ERROR"</span></code
+              >
               <span class="desc">Search for text in files</span>
             </div>
             <div class="cmd">
-              <code>Get-ChildItem <span class="flag">-Recurse -File</span> | Select-String <span class="arg">"TODO"</span></code>
+              <code
+                >Get-ChildItem <span class="flag">-Recurse -File</span> |
+                Select-String <span class="arg">"TODO"</span></code
+              >
               <span class="desc">Recursive content search</span>
             </div>
           </div>
@@ -115,15 +153,24 @@
           </div>
           <div class="commands">
             <div class="cmd">
-              <code>Get-Process | Sort-Object <span class="flag">-Property</span> CPU <span class="flag">-Descending</span></code>
+              <code
+                >Get-Process | Sort-Object
+                <span class="flag">-Property</span> CPU
+                <span class="flag">-Descending</span></code
+              >
               <span class="desc">Sort processes by CPU usage</span>
             </div>
             <div class="cmd">
-              <code>Get-Service | Where-Object <span class="arg">{$_.Status -eq "Running"}</span></code>
+              <code
+                >Get-Service | Where-Object
+                <span class="arg">{$_.Status -eq "Running"}</span></code
+              >
               <span class="desc">Filter only running services</span>
             </div>
             <div class="cmd">
-              <code>Get-ChildItem | Select-Object Name, Length, LastWriteTime</code>
+              <code
+                >Get-ChildItem | Select-Object Name, Length, LastWriteTime</code
+              >
               <span class="desc">Project selected properties</span>
             </div>
             <div class="cmd">
@@ -144,7 +191,11 @@
               <span class="desc">List running processes</span>
             </div>
             <div class="cmd">
-              <code>Stop-Process <span class="flag">-Name</span> <span class="arg">notepad</span> <span class="flag">-Force</span></code>
+              <code
+                >Stop-Process <span class="flag">-Name</span>
+                <span class="arg">notepad</span>
+                <span class="flag">-Force</span></code
+              >
               <span class="desc">Kill process by name</span>
             </div>
             <div class="cmd">
@@ -152,7 +203,10 @@
               <span class="desc">List services</span>
             </div>
             <div class="cmd">
-              <code>Restart-Service <span class="flag">-Name</span> <span class="arg">spooler</span></code>
+              <code
+                >Restart-Service <span class="flag">-Name</span>
+                <span class="arg">spooler</span></code
+              >
               <span class="desc">Restart a service</span>
             </div>
             <div class="cmd">
@@ -177,11 +231,17 @@
               <span class="desc">Print formatted output</span>
             </div>
             <div class="cmd">
-              <code>if (<span class="arg">$LASTEXITCODE -ne 0</span>) { exit 1 }</code>
+              <code
+                >if (<span class="arg">$LASTEXITCODE -ne 0</span>) { exit 1
+                }</code
+              >
               <span class="desc">Basic conditional on previous command</span>
             </div>
             <div class="cmd">
-              <code>foreach ($f in Get-ChildItem <span class="arg">*.txt</span>) { $f.Name }</code>
+              <code
+                >foreach ($f in Get-ChildItem <span class="arg">*.txt</span>) {
+                $f.Name }</code
+              >
               <span class="desc">Loop through matching files</span>
             </div>
             <div class="cmd">
@@ -202,24 +262,42 @@
               <span class="desc">Find commands by wildcard name</span>
             </div>
             <div class="cmd">
-              <code>Get-Help <span class="arg">Get-ChildItem</span> <span class="flag">-Examples</span></code>
+              <code
+                >Get-Help <span class="arg">Get-ChildItem</span>
+                <span class="flag">-Examples</span></code
+              >
               <span class="desc">Show practical examples for a cmdlet</span>
             </div>
             <div class="cmd">
-              <code>Get-NetIPAddress | Where-Object <span class="arg">{$_.AddressFamily -eq "IPv4"}</span></code>
+              <code
+                >Get-NetIPAddress | Where-Object
+                <span class="arg">{$_.AddressFamily -eq "IPv4"}</span></code
+              >
               <span class="desc">List IPv4 addresses</span>
             </div>
             <div class="cmd">
-              <code>Test-Connection <span class="arg">github.com</span> <span class="flag">-Count</span> 2</code>
+              <code
+                >Test-Connection <span class="arg">github.com</span>
+                <span class="flag">-Count</span> 2</code
+              >
               <span class="desc">Quick network connectivity check</span>
             </div>
             <div class="cmd">
-              <code>Get-History | Select-Object <span class="flag">-Last</span> 20</code>
+              <code
+                >Get-History | Select-Object
+                <span class="flag">-Last</span> 20</code
+              >
               <span class="desc">Show your recent commands</span>
             </div>
             <div class="cmd">
-              <code>Set-ExecutionPolicy <span class="arg">RemoteSigned</span> <span class="flag">-Scope</span> CurrentUser</code>
-              <span class="desc">Allow running local scripts <span class="tag tag-danger">security-sensitive</span></span>
+              <code
+                >Set-ExecutionPolicy <span class="arg">RemoteSigned</span>
+                <span class="flag">-Scope</span> CurrentUser</code
+              >
+              <span class="desc"
+                >Allow running local scripts
+                <span class="tag tag-danger">security-sensitive</span></span
+              >
             </div>
           </div>
         </div>

@@ -15,11 +15,11 @@ export function initNav(activePage) {
         <span>Dev Cheatsheets</span>
       </a>
       <ul class="nav-links">
+      <li>
+        <a href="${gitHref}" class="git-link ${activePage === "git" ? "active" : ""}">Git</a>
+      </li>
         <li>
           <a href="${bashHref}" class="bash-link ${activePage === "bash" ? "active" : ""}">Bash</a>
-        </li>
-        <li>
-          <a href="${gitHref}" class="git-link ${activePage === "git" ? "active" : ""}">Git</a>
         </li>
         <li>
           <a href="${powershellHref}" class="powershell-link ${activePage === "powershell" ? "active" : ""}">PowerShell</a>
@@ -28,4 +28,3 @@ export function initNav(activePage) {
     </div>
   `;
 }
-
